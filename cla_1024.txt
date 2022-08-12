@@ -1,0 +1,12 @@
+# Original circuit
+#   qubits: 4097
+#   qubits used: 4097
+#   H: 4096
+#   cnot: 11264
+#   X: 0
+#   T: 14336
+#   P: 0
+#   Z: 0
+#   tdepth (by partitions): 10240
+#   depth  (by critical paths): 8201
+#   tdepth (by critical paths): 3077
