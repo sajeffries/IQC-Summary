@@ -1,0 +1,279 @@
+#2 anc performs worse overall, this is one anc, no anc has worse tdepth but slightly better overall depth
+# Original circuit
+#   qubits: 10
+#   qubits used: 9
+#   H: 14
+#   cnot: 52
+#   X: 0
+#   T: 49
+#   P: 0
+#   Z: 0
+#   tdepth (by partitions): 29
+#   depth  (by critical paths): 53
+#   tdepth (by critical paths): 13
+# Optimized circuit
+#   qubits: 10
+#   qubits used: 10
+#   H: 12
+#   cnot: 194
+#   X: 0
+#   T: 41
+#   P: 0
+#   Z: 0
+#   tdepth (by partitions): 8
+#   depth  (by critical paths): 155
+#   tdepth (by critical paths): 8
+#   Time: 0.002 s
+.v a0 b0 a1 b1 a2 b2 a3 b3 a4 anc
+.i a0 b0 a1 b1 a2 b2 a3 b3
+.o a0 b0 a1 b1 a2 b2 a3 b3 a4 anc
+
+BEGIN
+tof a2 a1
+tof a2 b1
+tof a3 a2
+tof a3 b2
+tof anc a3
+tof anc b3
+tof anc a4
+tof b3 a4
+tof a3 anc
+tof a3 b3
+tof a2 anc
+tof a2 b2
+tof a1 anc
+tof a1 b1
+T anc
+T b0
+T a1
+T b1
+T a2
+T b2
+T a3
+T b3
+T* a4
+tof b3 a4
+tof a2 a3
+tof a2 a4
+tof a2 b3
+tof a1 a3
+tof a1 a4
+tof a1 b3
+tof a1 a2
+tof a1 b2
+tof anc a3
+tof anc a4
+tof anc b3
+tof anc a2
+tof anc b2
+tof anc a1
+tof anc b1
+tof a2 a4
+tof a2 b3
+tof a1 a2
+tof a1 b2
+tof anc a1
+tof anc b1
+H a0
+tof b0 a0
+tof anc b0
+tof a2 a1
+tof a2 b2
+tof a4 a1
+tof a4 b2
+tof a4 a2
+tof a4 b3
+tof a1 b3
+tof a1 a4
+tof a1 b2
+tof a1 a2
+tof anc b3
+tof anc a4
+tof anc b2
+tof anc a2
+tof anc b1
+tof b0 a1
+tof a0 a1
+tof a0 anc
+tof a0 b0
+T* a0
+T* b0
+T anc
+T a1
+tof anc a0
+tof anc b0
+tof anc a1
+tof b0 a1
+tof b0 anc
+tof a0 a1
+tof a0 anc
+tof a0 b0
+tof a4 a1
+tof a4 b3
+tof a2 a4
+tof a2 b2
+tof a0 a2
+tof a0 b1
+H anc
+H a0
+tof b1 a0
+tof a2 a0
+tof a2 b1
+tof a3 a2
+tof a2 a3
+tof b1 a3
+tof a0 a3
+tof a0 a2
+tof a0 b1
+tof anc b0
+T* a2
+T* a3
+T a0
+T b1
+T* anc
+T* b0
+tof a3 a2
+tof a0 a2
+tof a0 a3
+tof b1 a2
+tof b1 a0
+tof anc b0
+tof a0 a3
+H b1
+H a3
+tof b2 a3
+tof a4 a3
+tof a4 b2
+tof a4 a2
+tof b2 a4
+tof a3 a2
+tof a3 a4
+tof a3 b2
+tof b1 a0
+T* a2
+T* a4
+T a3
+T b2
+T* b1
+T* a0
+tof a4 a2
+tof a3 a2
+tof a3 a4
+tof b2 a2
+tof b2 a3
+tof b1 a0
+tof a3 a4
+H b2
+H a4
+tof a3 b2
+tof a4 b2
+tof a4 a3
+tof a1 a4
+tof a1 b3
+tof a2 a1
+tof a1 a2
+tof b3 a2
+tof a4 a2
+tof a4 b3
+tof a4 a1
+tof b2 a3
+tof b2 a1
+T* b3
+T* a4
+T a2
+T* a3
+T b2
+T* a1
+tof a4 b3
+tof a2 b3
+tof a2 a4
+tof a3 b3
+tof a3 a2
+tof b2 a3
+tof a3 a1
+tof a3 b2
+tof b3 a1
+tof b3 b2
+tof b3 a2
+T b3
+T* a3
+tof b2 b3
+tof b2 a3
+tof a2 a4
+tof b3 a3
+tof a3 b3
+H b2
+H a3
+tof a3 b1
+tof a3 a0
+tof a1 a0
+tof a1 a3
+tof a3 a1
+tof a0 a3
+tof b1 a3
+T* a1
+T a3
+T b1
+T* a0
+tof b1 a1
+tof b1 a3
+tof b1 a0
+tof a3 a0
+tof a1 a0
+tof a1 b1
+tof a1 a3
+tof a3 a1
+H b1
+H a3
+tof b0 anc
+tof a3 anc
+tof a3 a0
+tof b0 a0
+tof anc b0
+T* a3
+T anc
+T b0
+T* a0
+tof b0 a3
+tof b0 anc
+tof b0 a0
+tof anc a0
+tof a3 a0
+tof a3 b0
+tof a3 anc
+tof anc a3
+H b0
+tof a3 anc
+tof a1 b0
+tof b3 b1
+tof b2 a2
+tof b1 a2
+tof b1 b2
+tof b1 b3
+tof b0 a2
+tof b0 b2
+tof b0 b3
+tof b0 b1
+tof b0 a1
+tof anc a0
+tof a0 anc
+tof anc a0
+tof b0 a3
+tof a3 b0
+tof b0 a3
+tof a3 b2
+tof b2 a3
+tof a3 b2
+tof b2 b3
+tof b3 b2
+tof b2 b3
+tof b3 a2
+tof a2 b3
+tof b3 a2
+tof a2 b1
+tof b1 a2
+tof a2 b1
+tof b1 a1
+tof a1 b1
+tof b1 a1
+END

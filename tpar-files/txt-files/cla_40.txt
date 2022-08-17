@@ -1,0 +1,6534 @@
+# Original circuit
+#   qubits: 161
+#   qubits used: 161
+#   H: 160
+#   cnot: 440
+#   X: 0
+#   T: 560
+#   P: 0
+#   Z: 0
+#   tdepth (by partitions): 400
+#   depth  (by critical paths): 329
+#   tdepth (by critical paths): 125
+# Optimized circuit
+#   qubits: 161
+#   qubits used: 161
+#   H: 161
+#   cnot: 5864
+#   X: 0
+#   T: 475
+#   P: 3
+#   Z: 0
+#   tdepth (by partitions): 118
+#   depth  (by critical paths): 1343
+#   tdepth (by critical paths): 117
+#   Time: 0.257 s
+.v c0 a0 b0 d0 a1 b1 d1 a2 b2 d2 a3 b3 d3 a4 b4 d4 a5 b5 d5 a6 b6 d6 a7 b7 d7 a8 b8 d8 a9 b9 d9 a10 b10 d10 a11 b11 d11 a12 b12 d12 a13 b13 d13 a14 b14 d14 a15 b15 d15 a16 b16 d16 a17 b17 d17 a18 b18 d18 a19 b19 d19 a20 b20 d20 a21 b21 d21 a22 b22 d22 a23 b23 d23 a24 b24 d24 a25 b25 d25 a26 b26 d26 a27 b27 d27 a28 b28 d28 a29 b29 d29 a30 b30 d30 a31 b31 d31 a32 b32 d32 a33 b33 d33 a34 b34 d34 a35 b35 d35 a36 b36 d36 a37 b37 d37 a38 b38 d38 a39 b39 d39 anc0 anc1 anc2 anc3 anc4 anc5 anc6 anc7 anc8 anc9 anc10 anc11 anc12 anc13 anc14 anc15 anc16 anc17 anc18 anc19 anc20 anc21 anc22 anc23 anc24 anc25 anc26 anc27 anc28 anc29 anc30 anc31 anc32 anc33 anc34 anc35 anc36 anc37 anc38 anc39
+.i a0 b0 d0 a1 b1 d1 a2 b2 d2 a3 b3 d3 a4 b4 d4 a5 b5 d5 a6 b6 d6 a7 b7 d7 a8 b8 d8 a9 b9 d9 a10 b10 d10 a11 b11 d11 a12 b12 d12 a13 b13 d13 a14 b14 d14 a15 b15 d15 a16 b16 d16 a17 b17 d17 a18 b18 d18 a19 b19 d19 a20 b20 d20 a21 b21 d21 a22 b22 d22 a23 b23 d23 a24 b24 d24 a25 b25 d25 a26 b26 d26 a27 b27 d27 a28 b28 d28 a29 b29 d29 a30 b30 d30 a31 b31 d31 a32 b32 d32 a33 b33 d33 a34 b34 d34 a35 b35 d35 a36 b36 d36 a37 b37 d37 a38 b38 d38 a39 b39 d39
+.o c0 a0 b0 d0 a1 b1 d1 a2 b2 d2 a3 b3 d3 a4 b4 d4 a5 b5 d5 a6 b6 d6 a7 b7 d7 a8 b8 d8 a9 b9 d9 a10 b10 d10 a11 b11 d11 a12 b12 d12 a13 b13 d13 a14 b14 d14 a15 b15 d15 a16 b16 d16 a17 b17 d17 a18 b18 d18 a19 b19 d19 a20 b20 d20 a21 b21 d21 a22 b22 d22 a23 b23 d23 a24 b24 d24 a25 b25 d25 a26 b26 d26 a27 b27 d27 a28 b28 d28 a29 b29 d29 a30 b30 d30 a31 b31 d31 a32 b32 d32 a33 b33 d33 a34 b34 d34 a35 b35 d35 a36 b36 d36 a37 b37 d37 a38 b38 d38 a39 b39 d39 anc0 anc1 anc2 anc3 anc4 anc5 anc6 anc7 anc8 anc9 anc10 anc11 anc12 anc13 anc14 anc15 anc16 anc17 anc18 anc19 anc20 anc21 anc22 anc23 anc24 anc25 anc26 anc27 anc28 anc29 anc30 anc31 anc32 anc33 anc34 anc35 anc36 anc37 anc38 anc39
+
+BEGIN
+H d0
+tof d0 c0
+tof a0 c0
+tof anc2 d0
+tof anc2 anc0
+tof anc2 anc1
+tof d0 anc1
+tof d0 anc0
+tof d0 anc2
+tof b0 anc2
+tof a0 anc2
+tof anc2 anc1
+tof b0 d0
+T a0
+T b0
+T* d0
+T* c0
+T anc2
+T anc0
+T a1
+T b1
+T a2
+T b2
+T a3
+T b3
+T a4
+T b4
+T a5
+T b5
+T a6
+T b6
+T a7
+T b7
+T a8
+T b8
+T a9
+T b9
+T a10
+T b10
+T a11
+T b11
+T a12
+T b12
+T a13
+T b13
+T a14
+T b14
+T a15
+T b15
+T a16
+T b16
+T a17
+T b17
+T a18
+T b18
+T a19
+T b19
+T a20
+T b20
+T a21
+T b21
+T a22
+T b22
+T a23
+T b23
+T a24
+T b24
+T a25
+T b25
+T a26
+T b26
+T a27
+T b27
+T a28
+T b28
+T a29
+T b29
+T a30
+T b30
+T a31
+T b31
+T a32
+T b32
+T a33
+T b33
+T a34
+T b34
+T a35
+T b35
+T a36
+T b36
+T a37
+T b37
+T a38
+T b38
+T a39
+T b39
+T* anc1
+tof anc2 d0
+tof anc2 c0
+tof anc2 anc1
+tof b0 anc2
+tof a0 d0
+tof a0 anc2
+tof anc2 anc1
+tof anc2 anc0
+tof b0 c0
+H anc2
+H d1
+tof d1 c0
+tof d1 a1
+tof b1 d1
+tof a1 b1
+T* d1
+T* a1
+T b1
+T c0
+tof b1 d1
+tof b1 a1
+tof a1 b1
+tof d1 b1
+tof b1 c0
+H b1
+H d2
+tof d2 c0
+tof d2 b2
+tof b2 a2
+tof b2 d2
+tof a2 d2
+T* b2
+T* d2
+T a2
+T c0
+tof a2 b2
+tof a2 d2
+tof d2 a2
+tof b2 a2
+tof a2 c0
+H a2
+H d3
+tof d3 c0
+tof d3 a3
+tof d3 b3
+tof b3 d3
+tof a3 d3
+T* b3
+T* a3
+T d3
+T c0
+tof d3 b3
+tof d3 a3
+tof a3 d3
+tof b3 d3
+tof d3 c0
+H d3
+H d4
+tof d4 c0
+tof d4 a4
+tof d4 b4
+tof b4 d4
+tof a4 d4
+T* b4
+T* a4
+T d4
+T c0
+tof d4 b4
+tof d4 a4
+tof a4 d4
+tof b4 d4
+tof d4 c0
+tof b4 a4
+H d4
+H d5
+tof d5 c0
+tof a4 b4
+tof d5 a5
+tof d5 b5
+tof b5 d5
+tof a5 d5
+tof b4 a4
+T* b5
+T* a5
+T d5
+T c0
+tof d5 b5
+tof d5 a5
+tof a5 d5
+tof b5 d5
+tof d5 c0
+tof b3 a3
+tof a4 b4
+H d5
+H d6
+tof d6 c0
+tof b4 a4
+tof d6 a6
+tof d6 b6
+tof b6 d6
+tof a6 d6
+tof a4 b4
+T* b6
+T* a6
+T d6
+T c0
+tof d6 b6
+tof d6 a6
+tof a6 d6
+tof b6 d6
+tof d6 c0
+tof b4 a4
+H d6
+H d7
+tof d7 c0
+tof a4 b4
+tof d7 a7
+tof d7 b7
+tof b7 d7
+tof a7 d7
+tof b4 a4
+T* b7
+T* a7
+T d7
+T c0
+tof d7 b7
+tof d7 a7
+tof a7 d7
+tof b7 d7
+tof d7 c0
+tof b7 a7
+tof a4 b4
+H d7
+H d8
+tof d8 c0
+tof b4 a4
+tof a7 b7
+tof d8 a8
+tof d8 b8
+tof b8 d8
+tof a8 d8
+tof b7 a7
+tof a4 b4
+T* b8
+T* a8
+T d8
+T c0
+tof d8 b8
+tof d8 a8
+tof a8 d8
+tof b8 d8
+tof d8 c0
+tof b6 a6
+tof a7 b7
+tof b4 a4
+H d8
+H d9
+tof d9 c0
+tof a4 b4
+tof b7 a7
+tof d9 a9
+tof d9 b9
+tof b9 d9
+tof a9 d9
+tof a7 b7
+tof b4 a4
+T* b9
+T* a9
+T d9
+T c0
+tof d9 b9
+tof d9 a9
+tof a9 d9
+tof b9 d9
+tof d9 c0
+tof b7 a7
+tof a4 b4
+H d9
+H d10
+tof d10 c0
+tof b4 a4
+tof a7 b7
+tof d10 a10
+tof d10 b10
+tof b10 d10
+tof a10 d10
+tof b7 a7
+tof a4 b4
+T* b10
+T* a10
+T d10
+T c0
+tof d10 b10
+tof d10 a10
+tof a10 d10
+tof b10 d10
+tof d10 c0
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d10
+H d11
+tof d11 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof d11 a11
+tof d11 b11
+tof b11 d11
+tof a11 d11
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b11
+T* a11
+T d11
+T c0
+tof d11 b11
+tof d11 a11
+tof a11 d11
+tof b11 d11
+tof d11 c0
+tof b9 a9
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d11
+H d12
+tof d12 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof d12 a12
+tof d12 b12
+tof b12 d12
+tof a12 d12
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b12
+T* a12
+T d12
+T c0
+tof d12 b12
+tof d12 a12
+tof a12 d12
+tof b12 d12
+tof d12 c0
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d12
+H d13
+tof d13 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof d13 a13
+tof d13 b13
+tof b13 d13
+tof a13 d13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b13
+T* a13
+T d13
+T c0
+tof d13 b13
+tof d13 a13
+tof a13 d13
+tof b13 d13
+tof d13 c0
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d13
+H d14
+tof d14 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof d14 a14
+tof d14 b14
+tof b14 d14
+tof a14 d14
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b14
+T* a14
+T d14
+T c0
+tof d14 b14
+tof d14 a14
+tof a14 d14
+tof b14 d14
+tof d14 c0
+tof b12 a12
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d14
+H d15
+tof d15 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof d15 a15
+tof d15 b15
+tof b15 d15
+tof a15 d15
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b15
+T* a15
+T d15
+T c0
+tof d15 b15
+tof d15 a15
+tof a15 d15
+tof b15 d15
+tof d15 c0
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d15
+H d16
+tof d16 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof d16 a16
+tof d16 b16
+tof b16 d16
+tof a16 d16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b16
+T* a16
+T d16
+T c0
+tof d16 b16
+tof d16 a16
+tof a16 d16
+tof b16 d16
+tof d16 c0
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d16
+H d17
+tof d17 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof d17 a17
+tof d17 b17
+tof b17 d17
+tof a17 d17
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b17
+T* a17
+T d17
+T c0
+tof d17 b17
+tof d17 a17
+tof a17 d17
+tof b17 d17
+tof d17 c0
+tof b15 a15
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d17
+H d18
+tof d18 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof d18 a18
+tof d18 b18
+tof b18 d18
+tof a18 d18
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b18
+T* a18
+T d18
+T c0
+tof d18 b18
+tof d18 a18
+tof a18 d18
+tof b18 d18
+tof d18 c0
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d18
+H d19
+tof d19 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof d19 a19
+tof d19 b19
+tof b19 d19
+tof a19 d19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b19
+T* a19
+T d19
+T c0
+tof d19 b19
+tof d19 a19
+tof a19 d19
+tof b19 d19
+tof d19 c0
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d19
+H d20
+tof d20 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof d20 a20
+tof d20 b20
+tof b20 d20
+tof a20 d20
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b20
+T* a20
+T d20
+T c0
+tof d20 b20
+tof d20 a20
+tof a20 d20
+tof b20 d20
+tof d20 c0
+tof b18 a18
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d20
+H d21
+tof d21 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof d21 a21
+tof d21 b21
+tof b21 d21
+tof a21 d21
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b21
+T* a21
+T d21
+T c0
+tof d21 b21
+tof d21 a21
+tof a21 d21
+tof b21 d21
+tof d21 c0
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d21
+H d22
+tof d22 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof d22 a22
+tof d22 b22
+tof b22 d22
+tof a22 d22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b22
+T* a22
+T d22
+T c0
+tof d22 b22
+tof d22 a22
+tof a22 d22
+tof b22 d22
+tof d22 c0
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d22
+H d23
+tof d23 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof d23 a23
+tof d23 b23
+tof b23 d23
+tof a23 d23
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b23
+T* a23
+T d23
+T c0
+tof d23 b23
+tof d23 a23
+tof a23 d23
+tof b23 d23
+tof d23 c0
+tof b21 a21
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d23
+H d24
+tof d24 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof d24 a24
+tof d24 b24
+tof b24 d24
+tof a24 d24
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b24
+T* a24
+T d24
+T c0
+tof d24 b24
+tof d24 a24
+tof a24 d24
+tof b24 d24
+tof d24 c0
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d24
+H d25
+tof d25 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof d25 a25
+tof d25 b25
+tof b25 d25
+tof a25 d25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b25
+T* a25
+T d25
+T c0
+tof d25 b25
+tof d25 a25
+tof a25 d25
+tof b25 d25
+tof d25 c0
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d25
+H d26
+tof d26 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof d26 a26
+tof d26 b26
+tof b26 d26
+tof a26 d26
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b26
+T* a26
+T d26
+T c0
+tof d26 b26
+tof d26 a26
+tof a26 d26
+tof b26 d26
+tof d26 c0
+tof b24 a24
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d26
+H d27
+tof d27 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof d27 a27
+tof d27 b27
+tof b27 d27
+tof a27 d27
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b27
+T* a27
+T d27
+T c0
+tof d27 b27
+tof d27 a27
+tof a27 d27
+tof b27 d27
+tof d27 c0
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d27
+H d28
+tof d28 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof d28 a28
+tof d28 b28
+tof b28 d28
+tof a28 d28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b28
+T* a28
+T d28
+T c0
+tof d28 b28
+tof d28 a28
+tof a28 d28
+tof b28 d28
+tof d28 c0
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d28
+H d29
+tof d29 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof d29 a29
+tof d29 b29
+tof b29 d29
+tof a29 d29
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b29
+T* a29
+T d29
+T c0
+tof d29 b29
+tof d29 a29
+tof a29 d29
+tof b29 d29
+tof d29 c0
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d29
+H d30
+tof d30 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b28 a28
+tof d30 a30
+tof d30 b30
+tof b30 d30
+tof a30 d30
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b30
+T* a30
+T d30
+T c0
+tof d30 b30
+tof d30 a30
+tof a30 d30
+tof b30 d30
+tof d30 c0
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H d30
+H d31
+tof d31 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof d31 a31
+tof b31 d31
+tof a31 b31
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* d31
+T* a31
+T b31
+T c0
+tof b31 d31
+tof b31 a31
+tof a31 b31
+tof d31 b31
+tof b31 c0
+tof d31 a31
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H b31
+H d32
+tof d32 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b28 a28
+tof a31 d31
+tof d32 b32
+tof b32 a32
+tof b32 d32
+tof a32 d32
+tof d31 a31
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b32
+T* d32
+T a32
+T c0
+tof a32 b32
+tof a32 d32
+tof d32 a32
+tof b32 a32
+tof a32 c0
+tof a31 d31
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H a32
+H d33
+tof d33 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof d31 a31
+tof d33 a33
+tof d33 b33
+tof b33 d33
+tof a33 d33
+tof a31 d31
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* b33
+T* a33
+T d33
+T c0
+tof d33 b33
+tof d33 a33
+tof a33 d33
+tof b33 d33
+tof d33 c0
+tof b33 a33
+tof d31 a31
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H d33
+H d34
+tof d34 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b28 a28
+tof a33 b33
+tof d34 a34
+tof b34 a34
+tof b34 d34
+tof a34 b34
+tof b33 a33
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* d34
+T* b34
+T a34
+T c0
+tof a34 d34
+tof a34 b34
+tof b34 a34
+tof d34 a34
+tof a34 c0
+tof d34 b34
+tof b30 a30
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H a34
+H d35
+tof d35 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof a31 d31
+tof b34 d34
+tof d35 a35
+tof b35 d35
+tof a35 b35
+tof d34 b34
+tof d31 a31
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* d35
+T* a35
+T b35
+T c0
+tof b35 d35
+tof b35 a35
+tof a35 b35
+tof d35 b35
+tof b35 c0
+tof d35 a35
+tof a33 b33
+tof a31 d31
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H b35
+H d36
+tof d36 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b28 a28
+tof d31 a31
+tof b33 a33
+tof a35 d35
+tof d36 b36
+tof b36 a36
+tof b36 d36
+tof a36 d36
+tof d35 a35
+tof a33 b33
+tof a31 d31
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* b36
+T* d36
+T a36
+T c0
+tof a36 b36
+tof a36 d36
+tof d36 a36
+tof b36 a36
+tof a36 c0
+tof b36 d36
+tof a35 d35
+tof b33 a33
+tof b34 d34
+tof b29 a29
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H a36
+H d37
+tof d37 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof a30 b30
+tof a33 b33
+tof d34 b34
+tof d35 a35
+tof d36 b36
+tof d37 a37
+tof b37 a37
+tof b37 d37
+tof a37 b37
+tof b36 d36
+tof a35 d35
+tof b34 d34
+tof b33 a33
+tof b30 a30
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* d37
+T* b37
+T a37
+T c0
+tof a37 d37
+tof a37 b37
+tof b37 a37
+tof d37 a37
+tof a37 c0
+tof d37 b37
+tof a33 b33
+tof d34 b34
+tof a30 b30
+tof d31 a31
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+H a37
+H d38
+tof d38 c0
+tof b4 a4
+tof a7 b7
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b28 a28
+tof b30 a30
+tof a31 d31
+tof b34 d34
+tof b37 d37
+tof d38 a38
+tof b38 d38
+tof a38 b38
+tof d37 b37
+tof d34 b34
+tof d31 a31
+tof a30 b30
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b7 a7
+tof a4 b4
+T* d38
+T* a38
+T b38
+T c0
+tof b38 d38
+tof b38 a38
+tof a38 b38
+tof d38 b38
+tof b38 c0
+tof d38 a38
+tof b37 d37
+tof d35 a35
+tof b32 d32
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+H b38
+H d39
+tof d39 c0
+tof a4 b4
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof b33 a33
+tof a35 d35
+tof d37 b37
+tof a38 d38
+tof d39 a39
+tof b39 d39
+tof a39 b39
+tof d38 a38
+tof b37 d37
+tof d35 a35
+tof a33 b33
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+T* d39
+T* a39
+T b39
+T c0
+tof b39 d39
+tof b39 a39
+tof a39 b39
+tof d39 b39
+tof b39 c0
+tof d39 a39
+tof d36 b36
+tof a35 d35
+tof b33 a33
+tof b34 d34
+tof a31 d31
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b8 a8
+tof b7 a7
+tof b5 a5
+tof a4 b4
+tof b2 d2
+tof d1 a1
+H b39
+tof anc0 anc2
+tof a1 anc2
+tof a1 d1
+tof d2 b2
+tof b4 a4
+tof a5 b5
+tof a7 b7
+tof a8 b8
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof d31 a31
+tof a33 b33
+tof d34 b34
+tof d35 a35
+tof b36 d36
+tof a39 d39
+tof d39 a39
+tof d36 b36
+tof a35 d35
+tof b34 d34
+tof b33 a33
+tof a31 d31
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b8 a8
+tof b7 a7
+tof b5 a5
+tof a4 b4
+tof b2 d2
+tof anc2 a1
+T a1
+T* anc2
+tof d1 anc2
+tof anc2 a1
+tof anc0 anc2
+tof a1 anc2
+tof anc0 anc2
+tof a39 d39
+tof a38 d38
+tof d37 b37
+tof d35 a35
+tof a33 b33
+tof d34 b34
+tof d31 a31
+tof b27 a27
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof b4 a4
+tof a1 d1
+H anc1
+tof anc1 c0
+tof anc1 anc2
+tof d1 a1
+tof a3 b3
+tof a6 b6
+tof a9 b9
+tof a12 b12
+tof a15 b15
+tof a18 b18
+tof a21 b21
+tof a24 b24
+tof a27 b27
+tof a29 b29
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof a35 d35
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof d35 a35
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof b29 a29
+tof b27 a27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof b12 a12
+tof b9 a9
+tof b6 a6
+tof b3 a3
+tof d1 anc1
+tof anc2 d1
+T* anc1
+T* anc2
+T d1
+T c0
+tof d1 anc1
+tof d1 anc2
+tof a1 anc2
+tof a1 d1
+tof anc2 d1
+tof anc1 d1
+tof d1 c0
+tof anc1 a1
+tof d39 a39
+tof b36 d36
+tof a35 d35
+tof b33 a33
+tof b34 d34
+tof b30 a30
+tof a24 b24
+tof a25 b25
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof a12 b12
+tof a9 b9
+tof a8 b8
+tof a5 b5
+tof d2 b2
+H d1
+tof d1 b1
+tof b2 b1
+tof b2 d2
+tof a4 b4
+tof b5 a5
+tof b7 a7
+tof b8 a8
+tof a10 b10
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a31 d31
+tof a33 b33
+tof d34 b34
+tof d35 a35
+tof d36 b36
+tof a39 d39
+tof d39 a39
+tof b36 d36
+tof a35 d35
+tof b34 d34
+tof b33 a33
+tof d31 a31
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof a8 b8
+tof a7 b7
+tof a5 b5
+tof b4 a4
+tof b1 b2
+T b2
+T* b1
+tof d2 b1
+tof b1 b2
+tof d1 b1
+tof b2 b1
+tof d1 b1
+tof a39 d39
+tof d38 a38
+tof d35 a35
+tof a33 b33
+tof d34 b34
+tof d32 b32
+tof a29 b29
+tof a27 b27
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof a6 b6
+tof b5 a5
+tof a3 b3
+tof b2 d2
+H d0
+tof d0 c0
+tof d0 b1
+tof d2 b2
+tof b3 a3
+tof b6 a6
+tof b9 a9
+tof b12 a12
+tof b15 a15
+tof b18 a18
+tof b21 a21
+tof b24 a24
+tof b27 a27
+tof b29 a29
+tof b32 d32
+tof b33 a33
+tof b34 d34
+tof a35 d35
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof d35 a35
+tof d34 b34
+tof a33 b33
+tof d32 b32
+tof a29 b29
+tof a27 b27
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof a12 b12
+tof a9 b9
+tof a6 b6
+tof a3 b3
+tof d2 d0
+tof b1 d2
+T* d0
+T* b1
+T d2
+T c0
+tof d2 d0
+tof d2 b1
+tof b2 b1
+tof b2 d2
+tof b1 d2
+tof d0 d2
+tof d2 c0
+tof d0 b2
+tof d39 a39
+tof d36 b36
+tof a35 d35
+tof b33 a33
+tof b34 d34
+tof a31 d31
+tof b24 a24
+tof b25 a25
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof b12 a12
+tof b9 a9
+tof b8 a8
+tof b7 a7
+tof b3 a3
+tof b1 b2
+H d2
+tof b2 b1
+tof d2 a2
+tof a3 a2
+tof a3 b3
+tof a5 b5
+tof a7 b7
+tof a8 b8
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof d31 a31
+tof a33 b33
+tof d34 b34
+tof d35 a35
+tof b36 d36
+tof a39 d39
+tof d39 a39
+tof d36 b36
+tof a35 d35
+tof b34 d34
+tof b33 a33
+tof a31 d31
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof b8 a8
+tof b7 a7
+tof b5 a5
+tof a2 a3
+tof b1 b2
+T a3
+T* a2
+tof b3 a2
+tof a2 a3
+tof d2 a2
+tof a3 a2
+tof d2 a2
+tof a39 d39
+tof b36 d36
+tof d35 a35
+tof a33 b33
+tof d34 b34
+tof b32 d32
+tof b29 a29
+tof b27 a27
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof b6 a6
+tof a5 b5
+tof a3 b3
+tof b2 b1
+H anc3
+tof anc3 c0
+tof b3 a2
+tof anc3 a2
+tof b3 a3
+tof anc3 b3
+tof a6 b6
+tof a9 b9
+tof a12 b12
+tof a15 b15
+tof a18 b18
+tof a21 b21
+tof a24 b24
+tof a27 b27
+tof a29 b29
+tof a30 b30
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof a35 d35
+tof d36 b36
+tof d39 a39
+tof a39 d39
+tof b36 d36
+tof d35 a35
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof b30 a30
+tof b29 a29
+tof b27 a27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof b12 a12
+tof b9 a9
+tof b6 a6
+tof b3 anc3
+tof a2 anc3
+T* b3
+T* anc3
+T a2
+T c0
+tof a2 b3
+tof a2 anc3
+tof a3 anc3
+tof a3 a2
+tof anc3 a2
+tof b3 a2
+tof a2 c0
+tof b3 a3
+tof d39 a39
+tof d36 b36
+tof b33 a33
+tof d32 b32
+tof d31 a31
+tof a27 b27
+tof a28 b28
+tof a25 b25
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof b14 a14
+tof b11 a11
+tof a8 b8
+tof a7 b7
+tof a4 b4
+H a2
+tof b1 b2
+tof a2 d3
+tof b4 d3
+tof b4 a4
+tof b5 a5
+tof b7 a7
+tof a10 b10
+tof b13 a13
+tof a14 b14
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof b28 a28
+tof a31 d31
+tof b32 d32
+tof b36 d36
+tof b37 d37
+tof a39 d39
+tof d39 a39
+tof d37 b37
+tof d36 b36
+tof d32 b32
+tof d31 a31
+tof a28 b28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof b14 a14
+tof a13 b13
+tof b10 a10
+tof a7 b7
+tof a5 b5
+tof d3 b4
+tof b2 b1
+T b4
+T* d3
+tof a4 d3
+tof d3 b4
+tof a2 d3
+tof b4 d3
+tof a2 d3
+tof a39 d39
+tof a38 d38
+tof b37 d37
+tof b34 d34
+tof b32 d32
+tof a30 b30
+tof a29 b29
+tof b26 a26
+tof a24 b24
+tof b20 a20
+tof b17 a17
+tof a14 b14
+tof a12 b12
+tof a9 b9
+tof a6 b6
+tof b5 a5
+tof b4 a4
+H anc4
+tof anc4 c0
+tof anc4 d3
+tof a4 b4
+tof anc4 a4
+tof a5 b5
+tof b6 a6
+tof b9 a9
+tof b12 a12
+tof b15 a15
+tof b18 a18
+tof b21 a21
+tof b24 a24
+tof b27 a27
+tof b29 a29
+tof b30 a30
+tof d32 b32
+tof a33 b33
+tof d34 b34
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof b34 d34
+tof b33 a33
+tof b32 d32
+tof a30 b30
+tof a29 b29
+tof a27 b27
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof a12 b12
+tof a9 b9
+tof a6 b6
+tof b5 a5
+tof a4 anc4
+tof d3 anc4
+T* a4
+T* d3
+T anc4
+T c0
+tof anc4 a4
+tof anc4 d3
+tof b4 d3
+tof b4 anc4
+tof d3 anc4
+tof a4 anc4
+tof anc4 c0
+tof a4 b4
+tof d39 a39
+tof b36 d36
+tof a35 d35
+tof a33 b33
+tof d34 b34
+tof b30 a30
+tof b28 a28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof a5 b5
+tof d3 b4
+tof b1 b2
+H anc4
+tof b2 b1
+tof anc4 d4
+tof b5 d4
+tof b5 a5
+tof b8 a8
+tof b10 a10
+tof a13 b13
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof a28 b28
+tof b33 a33
+tof b34 d34
+tof d35 a35
+tof d36 b36
+tof a39 d39
+tof d39 a39
+tof b36 d36
+tof a35 d35
+tof d34 b34
+tof a33 b33
+tof b28 a28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof a10 b10
+tof a8 b8
+tof d4 b5
+tof b1 b2
+T b5
+T* d4
+tof a5 d4
+tof d4 b5
+tof anc4 d4
+tof b5 d4
+tof anc4 d4
+tof a39 d39
+tof d36 b36
+tof d35 a35
+tof b33 a33
+tof b34 d34
+tof d32 b32
+tof b29 a29
+tof b27 a27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof b12 a12
+tof b9 a9
+tof b8 a8
+tof b5 a5
+tof b2 b1
+H anc5
+tof anc5 c0
+tof b4 d3
+tof anc5 d4
+tof a5 b5
+tof anc5 a5
+tof a9 b9
+tof a12 b12
+tof a15 b15
+tof a18 b18
+tof a21 b21
+tof a24 b24
+tof a27 b27
+tof a29 b29
+tof b32 d32
+tof a33 b33
+tof d34 b34
+tof a35 d35
+tof d37 b37
+tof d39 a39
+tof a39 d39
+tof b37 d37
+tof d35 a35
+tof b34 d34
+tof b33 a33
+tof d32 b32
+tof b29 a29
+tof b27 a27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof b12 a12
+tof b9 a9
+tof a5 anc5
+tof d4 anc5
+tof d3 b4
+T* a5
+T* d4
+T anc5
+T c0
+tof anc5 a5
+tof anc5 d4
+tof b5 d4
+tof b5 anc5
+tof d4 anc5
+tof a5 anc5
+tof anc5 c0
+tof a5 b5
+tof d39 a39
+tof a35 d35
+tof d34 b34
+tof b32 d32
+tof a31 d31
+tof a27 b27
+tof a24 b24
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof b10 a10
+tof b6 a6
+tof b7 a7
+tof d4 b5
+tof b4 d3
+H anc5
+tof b1 b2
+tof b5 d4
+tof anc5 d5
+tof a6 d5
+tof a6 b6
+tof a7 b7
+tof a8 b8
+tof a10 b10
+tof b13 a13
+tof b14 a14
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof b27 a27
+tof d31 a31
+tof d32 b32
+tof b34 d34
+tof d35 a35
+tof b36 d36
+tof a39 d39
+tof d39 a39
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof b32 d32
+tof a31 d31
+tof a27 b27
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a14 b14
+tof a13 b13
+tof b10 a10
+tof b8 a8
+tof b7 a7
+tof d5 a6
+tof d4 b5
+tof b2 b1
+T a6
+T* d5
+tof b6 d5
+tof d5 a6
+tof anc5 d5
+tof a6 d5
+tof anc5 d5
+tof a39 d39
+tof d38 a38
+tof a33 b33
+tof b34 d34
+tof d32 b32
+tof a29 b29
+tof b27 a27
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof b14 a14
+tof a12 b12
+tof a9 b9
+tof a8 b8
+tof a6 b6
+tof a7 b7
+tof anc3 a3
+tof a0 b0
+H anc6
+tof anc6 c0
+tof d3 b4
+tof anc6 d5
+tof b6 a6
+tof anc6 b6
+tof b7 a7
+tof b8 a8
+tof b9 a9
+tof b12 a12
+tof b15 a15
+tof b18 a18
+tof b21 a21
+tof b24 a24
+tof a27 b27
+tof b29 a29
+tof a30 b30
+tof b32 d32
+tof b33 a33
+tof d34 b34
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof b34 d34
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof a29 b29
+tof b27 a27
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof a12 b12
+tof a9 b9
+tof a8 b8
+tof a7 b7
+tof b6 anc6
+tof d5 anc6
+tof b4 d3
+T* b6
+T* d5
+T anc6
+T c0
+tof anc6 b6
+tof anc6 d5
+tof a6 d5
+tof a6 anc6
+tof d5 anc6
+tof b6 anc6
+tof anc6 c0
+tof b6 a6
+tof a38 d38
+tof b36 d36
+tof b33 a33
+tof d34 b34
+tof a30 b30
+tof d31 a31
+tof a27 b27
+tof a28 b28
+tof b25 a25
+tof b21 a21
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b13 a13
+tof d5 a6
+tof b7 a7
+tof b5 d4
+tof b1 b2
+H anc6
+tof b2 b1
+tof d4 b5
+tof anc6 d6
+tof a7 d6
+tof a7 b7
+tof a11 b11
+tof a13 b13
+tof b16 a16
+tof a17 b17
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof a26 b26
+tof b28 a28
+tof a31 d31
+tof a33 b33
+tof b34 d34
+tof d36 b36
+tof b36 d36
+tof d34 b34
+tof b33 a33
+tof d31 a31
+tof a28 b28
+tof b26 a26
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof b17 a17
+tof a16 b16
+tof b13 a13
+tof b11 a11
+tof d6 a7
+tof b5 d4
+tof b1 b2
+T a7
+T* d6
+tof b7 d6
+tof d6 a7
+tof anc6 d6
+tof a7 d6
+tof anc6 d6
+tof d39 a39
+tof a33 b33
+tof b34 d34
+tof b32 d32
+tof b29 a29
+tof b24 a24
+tof b18 a18
+tof a17 b17
+tof b15 a15
+tof b12 a12
+tof a11 b11
+tof b8 a8
+tof a7 b7
+tof d3 b4
+H anc7
+tof anc7 c0
+tof b4 d3
+tof anc7 d6
+tof b7 a7
+tof anc7 b7
+tof a12 b12
+tof a15 b15
+tof a18 b18
+tof a21 b21
+tof a24 b24
+tof b27 a27
+tof a29 b29
+tof b30 a30
+tof d32 b32
+tof d34 b34
+tof d38 a38
+tof a39 d39
+tof d39 a39
+tof a38 d38
+tof b34 d34
+tof b32 d32
+tof a30 b30
+tof b29 a29
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof b12 a12
+tof b7 anc7
+tof d6 anc7
+tof d3 b4
+T* b7
+T* d6
+T anc7
+T c0
+tof anc7 b7
+tof anc7 d6
+tof a7 d6
+tof a7 anc7
+tof d6 anc7
+tof b7 anc7
+tof anc7 c0
+tof b7 a7
+tof d38 a38
+tof d36 b36
+tof d35 a35
+tof d34 b34
+tof b30 a30
+tof a31 d31
+tof a24 b24
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof a10 b10
+tof d4 b5
+tof b2 b1
+H anc7
+tof b1 b2
+tof b5 d4
+tof anc7 d7
+tof a8 d7
+tof a8 b8
+tof b10 a10
+tof b11 a11
+tof b13 a13
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof d31 a31
+tof b33 a33
+tof b34 d34
+tof a35 d35
+tof b36 d36
+tof d36 b36
+tof d35 a35
+tof d34 b34
+tof a33 b33
+tof a31 d31
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a13 b13
+tof a11 b11
+tof a10 b10
+tof d7 a8
+tof d4 b5
+tof b2 b1
+T a8
+T* d7
+tof b8 d7
+tof d7 a8
+tof anc7 d7
+tof a8 d7
+tof anc7 d7
+tof a39 d39
+tof b33 a33
+tof b34 d34
+tof d32 b32
+tof a29 b29
+tof b27 a27
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof a12 b12
+tof b11 a11
+tof b9 a9
+tof b10 a10
+tof a8 b8
+tof d6 a7
+tof b4 d3
+H anc8
+tof anc8 c0
+tof d3 b4
+tof a7 d6
+tof anc8 d7
+tof b8 a8
+tof anc8 b8
+tof a9 b9
+tof a10 b10
+tof a11 b11
+tof b12 a12
+tof b15 a15
+tof b18 a18
+tof b21 a21
+tof b24 a24
+tof a27 b27
+tof b29 a29
+tof a30 b30
+tof b32 d32
+tof d34 b34
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof b34 d34
+tof d32 b32
+tof b30 a30
+tof a29 b29
+tof b27 a27
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof a12 b12
+tof b11 a11
+tof b10 a10
+tof b9 a9
+tof b8 anc8
+tof d7 anc8
+tof d6 a7
+tof b4 d3
+T* b8
+T* d7
+T anc8
+T c0
+tof anc8 b8
+tof anc8 d7
+tof a8 d7
+tof a8 anc8
+tof d7 anc8
+tof b8 anc8
+tof anc8 c0
+tof b8 a8
+tof a38 d38
+tof b36 d36
+tof d34 b34
+tof b32 d32
+tof a30 b30
+tof d31 a31
+tof a27 b27
+tof b24 a24
+tof b25 a25
+tof b21 a21
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof a9 b9
+tof a10 b10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc8
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof anc8 d8
+tof b9 d8
+tof b9 a9
+tof b10 a10
+tof a14 b14
+tof b16 a16
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b30 a30
+tof a31 d31
+tof d32 b32
+tof b34 d34
+tof d36 b36
+tof b36 d36
+tof d34 b34
+tof b32 d32
+tof d31 a31
+tof a30 b30
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a16 b16
+tof b14 a14
+tof a10 b10
+tof d8 b9
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T b9
+T* d8
+tof a9 d8
+tof d8 b9
+tof anc8 d8
+tof b9 d8
+tof anc8 d8
+tof d39 a39
+tof d37 b37
+tof b34 d34
+tof d32 b32
+tof a31 d31
+tof a25 b25
+tof b22 a22
+tof b18 a18
+tof b15 a15
+tof a14 b14
+tof a11 b11
+tof b9 a9
+tof a8 d7
+tof a7 d6
+tof d3 b4
+H anc9
+tof anc9 c0
+tof b4 d3
+tof d6 a7
+tof anc9 d8
+tof a9 b9
+tof anc9 a9
+tof a15 b15
+tof a18 b18
+tof a21 b21
+tof a24 b24
+tof b27 a27
+tof b32 d32
+tof d34 b34
+tof d38 a38
+tof a39 d39
+tof d39 a39
+tof a38 d38
+tof b34 d34
+tof d32 b32
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b15 a15
+tof a9 anc9
+tof d8 anc9
+tof a7 d6
+tof d3 b4
+T* a9
+T* d8
+T anc9
+T c0
+tof anc9 a9
+tof anc9 d8
+tof b9 d8
+tof b9 anc9
+tof d8 anc9
+tof a9 anc9
+tof anc9 c0
+tof a9 b9
+tof a39 d39
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof b27 a27
+tof b28 a28
+tof a24 b24
+tof b23 a23
+tof a19 b19
+tof b16 a16
+tof b13 a13
+tof b10 a10
+tof d4 b5
+tof b2 b1
+H anc9
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof anc9 d9
+tof a10 d9
+tof a10 b10
+tof a13 b13
+tof b14 a14
+tof a16 b16
+tof b19 a19
+tof a22 b22
+tof a23 b23
+tof b25 a25
+tof a28 b28
+tof a30 b30
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof d35 a35
+tof b36 d36
+tof b37 d37
+tof d39 a39
+tof a39 d39
+tof d37 b37
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof b30 a30
+tof b28 a28
+tof a25 b25
+tof b23 a23
+tof b22 a22
+tof a19 b19
+tof b16 a16
+tof a14 b14
+tof b13 a13
+tof d9 a10
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a10
+T* d9
+tof b10 d9
+tof d9 a10
+tof anc9 d9
+tof a10 d9
+tof anc9 d9
+tof d39 a39
+tof b36 d36
+tof b37 d37
+tof d35 a35
+tof a33 b33
+tof b34 d34
+tof d32 b32
+tof b29 a29
+tof a26 b26
+tof a23 b23
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof b14 a14
+tof b12 a12
+tof a13 b13
+tof a10 b10
+tof d6 a7
+tof b4 d3
+H anc10
+tof anc10 c0
+tof d3 b4
+tof a7 d6
+tof anc10 d9
+tof b10 a10
+tof anc10 b10
+tof a12 b12
+tof b13 a13
+tof a14 b14
+tof b15 a15
+tof b18 a18
+tof b21 a21
+tof b24 a24
+tof a27 b27
+tof a29 b29
+tof b32 d32
+tof b33 a33
+tof d34 b34
+tof a35 d35
+tof d37 b37
+tof a39 d39
+tof d39 a39
+tof b37 d37
+tof d35 a35
+tof b34 d34
+tof a33 b33
+tof d32 b32
+tof b29 a29
+tof b27 a27
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a15 b15
+tof b14 a14
+tof a13 b13
+tof b12 a12
+tof b10 anc10
+tof d9 anc10
+tof d6 a7
+tof b4 d3
+T* b10
+T* d9
+T anc10
+T c0
+tof anc10 b10
+tof anc10 d9
+tof a10 d9
+tof a10 anc10
+tof d9 anc10
+tof b10 anc10
+tof anc10 c0
+tof b10 a10
+tof d38 a38
+tof a35 d35
+tof b33 a33
+tof d34 b34
+tof b32 d32
+tof a30 b30
+tof a27 b27
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a12 b12
+tof b13 a13
+tof d9 a10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc10
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof anc10 d10
+tof b11 d10
+tof b11 a11
+tof a13 b13
+tof b17 a17
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof b26 a26
+tof b28 a28
+tof b30 a30
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof d35 a35
+tof d36 b36
+tof b36 d36
+tof a35 d35
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof a30 b30
+tof a28 b28
+tof a26 b26
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof a17 b17
+tof b13 a13
+tof d10 b11
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T b11
+T* d10
+tof a11 d10
+tof d10 b11
+tof anc10 d10
+tof b11 d10
+tof anc10 d10
+tof a39 d39
+tof d37 b37
+tof d35 a35
+tof a33 b33
+tof b34 d34
+tof d32 b32
+tof a29 b29
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof b17 a17
+tof b11 a11
+tof a8 d7
+tof a7 d6
+tof d3 b4
+H anc11
+tof anc11 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof anc11 d10
+tof a11 b11
+tof anc11 a11
+tof b12 a12
+tof a18 b18
+tof a21 b21
+tof a24 b24
+tof b27 a27
+tof b29 a29
+tof b32 d32
+tof b33 a33
+tof d34 b34
+tof a35 d35
+tof b37 d37
+tof d39 a39
+tof a39 d39
+tof d37 b37
+tof d35 a35
+tof b34 d34
+tof a33 b33
+tof d32 b32
+tof a29 b29
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof b18 a18
+tof a12 b12
+tof a11 anc11
+tof d10 anc11
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* a11
+T* d10
+T anc11
+T c0
+tof anc11 a11
+tof anc11 d10
+tof b11 d10
+tof b11 anc11
+tof d10 anc11
+tof a11 anc11
+tof anc11 c0
+tof a11 b11
+tof d36 b36
+tof a35 d35
+tof b33 a33
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof b27 a27
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof a16 b16
+tof b12 a12
+tof a13 b13
+tof d10 b11
+tof a10 d9
+tof d4 b5
+tof b2 b1
+H anc11
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof anc11 d11
+tof a12 d11
+tof a12 b12
+tof b13 a13
+tof b16 a16
+tof a17 b17
+tof b19 a19
+tof a22 b22
+tof b25 a25
+tof a28 b28
+tof a30 b30
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof d35 a35
+tof b36 d36
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof b30 a30
+tof b28 a28
+tof a25 b25
+tof b22 a22
+tof a19 b19
+tof b17 a17
+tof a16 b16
+tof a13 b13
+tof d11 a12
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a12
+T* d11
+tof b12 d11
+tof d11 a12
+tof anc11 d11
+tof a12 d11
+tof anc11 d11
+tof d39 a39
+tof b36 d36
+tof d35 a35
+tof b34 d34
+tof d32 b32
+tof b29 a29
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a17 b17
+tof b15 a15
+tof b16 a16
+tof a12 b12
+tof b11 d10
+tof d7 a8
+tof d6 a7
+tof b4 d3
+H anc12
+tof anc12 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof anc12 d11
+tof b12 a12
+tof anc12 b12
+tof a15 b15
+tof a16 b16
+tof b17 a17
+tof b18 a18
+tof b21 a21
+tof b24 a24
+tof a27 b27
+tof a29 b29
+tof b32 d32
+tof d34 b34
+tof a35 d35
+tof d36 b36
+tof a38 d38
+tof a39 d39
+tof d39 a39
+tof d38 a38
+tof b36 d36
+tof d35 a35
+tof b34 d34
+tof d32 b32
+tof b29 a29
+tof b27 a27
+tof a24 b24
+tof a21 b21
+tof a18 b18
+tof a17 b17
+tof b16 a16
+tof b15 a15
+tof b12 anc12
+tof d11 anc12
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* b12
+T* d11
+T anc12
+T c0
+tof anc12 b12
+tof anc12 d11
+tof a12 d11
+tof a12 anc12
+tof d11 anc12
+tof b12 anc12
+tof anc12 c0
+tof b12 a12
+tof a39 d39
+tof d36 b36
+tof b37 d37
+tof a35 d35
+tof a33 b33
+tof d34 b34
+tof b32 d32
+tof a28 b28
+tof b25 a25
+tof a22 b22
+tof a15 b15
+tof a16 b16
+tof b13 a13
+tof d9 a10
+tof b5 d4
+tof b1 b2
+H anc12
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof anc12 d12
+tof a13 d12
+tof a13 b13
+tof b16 a16
+tof a20 b20
+tof b22 a22
+tof a25 b25
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof d35 a35
+tof b36 d36
+tof d37 b37
+tof d39 a39
+tof a39 d39
+tof b37 d37
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof b25 a25
+tof a22 b22
+tof b20 a20
+tof a16 b16
+tof d12 a13
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a13
+T* d12
+tof b13 d12
+tof d12 a13
+tof anc12 d12
+tof a13 d12
+tof anc12 d12
+tof d39 a39
+tof b36 d36
+tof d37 b37
+tof d35 a35
+tof b33 a33
+tof b34 d34
+tof d32 b32
+tof a29 b29
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof a20 b20
+tof a14 b14
+tof a13 b13
+tof d8 b9
+tof a7 d6
+tof d3 b4
+H anc13
+tof anc13 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof anc13 d12
+tof b13 a13
+tof anc13 b13
+tof b15 a15
+tof a21 b21
+tof a24 b24
+tof b27 a27
+tof b29 a29
+tof b32 d32
+tof a33 b33
+tof d34 b34
+tof a35 d35
+tof d36 b36
+tof b37 d37
+tof a39 d39
+tof d39 a39
+tof d37 b37
+tof b36 d36
+tof d35 a35
+tof b34 d34
+tof b33 a33
+tof d32 b32
+tof a29 b29
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof a15 b15
+tof b13 anc13
+tof d12 anc13
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* b13
+T* d12
+T anc13
+T c0
+tof anc13 b13
+tof anc13 d12
+tof a13 d12
+tof a13 anc13
+tof d12 anc13
+tof b13 anc13
+tof anc13 c0
+tof b13 a13
+tof a38 d38
+tof d36 b36
+tof b37 d37
+tof a35 d35
+tof a33 b33
+tof d34 b34
+tof b32 d32
+tof b26 a26
+tof a25 b25
+tof b22 a22
+tof b19 a19
+tof b16 a16
+tof d12 a13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc13
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof anc13 d13
+tof b14 d13
+tof b14 a14
+tof a16 b16
+tof a19 b19
+tof b20 a20
+tof a22 b22
+tof b25 a25
+tof b28 a28
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof d35 a35
+tof b36 d36
+tof d37 b37
+tof b37 d37
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof a28 b28
+tof a25 b25
+tof b22 a22
+tof a20 b20
+tof b19 a19
+tof b16 a16
+tof d13 b14
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T b14
+T* d13
+tof a14 d13
+tof d13 b14
+tof anc13 d13
+tof b14 d13
+tof anc13 d13
+tof a39 d39
+tof b36 d36
+tof d37 b37
+tof d35 a35
+tof b33 a33
+tof b34 d34
+tof d32 b32
+tof a30 b30
+tof b29 a29
+tof b27 a27
+tof a24 b24
+tof a21 b21
+tof b20 a20
+tof b18 a18
+tof a19 b19
+tof b15 a15
+tof b14 a14
+tof b11 d10
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc14
+tof anc14 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof anc14 d13
+tof a14 b14
+tof anc14 a14
+tof a15 b15
+tof a18 b18
+tof b19 a19
+tof a20 b20
+tof b21 a21
+tof b24 a24
+tof a27 b27
+tof a29 b29
+tof b30 a30
+tof b32 d32
+tof a33 b33
+tof d34 b34
+tof a35 d35
+tof d36 b36
+tof b37 d37
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof d37 b37
+tof b36 d36
+tof d35 a35
+tof b34 d34
+tof b33 a33
+tof d32 b32
+tof a30 b30
+tof b29 a29
+tof b27 a27
+tof a24 b24
+tof a21 b21
+tof b20 a20
+tof a19 b19
+tof b18 a18
+tof b15 a15
+tof a14 anc14
+tof d13 anc14
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* a14
+T* d13
+T anc14
+T c0
+tof anc14 a14
+tof anc14 d13
+tof b14 d13
+tof b14 anc14
+tof d13 anc14
+tof a14 anc14
+tof anc14 c0
+tof a14 b14
+tof d38 a38
+tof d36 b36
+tof b37 d37
+tof a35 d35
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof a27 b27
+tof b28 a28
+tof b25 a25
+tof a18 b18
+tof b19 a19
+tof a15 b15
+tof a16 b16
+tof d13 b14
+tof a13 d12
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc14
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof anc14 d14
+tof b15 d14
+tof b15 a15
+tof b16 a16
+tof a19 b19
+tof b23 a23
+tof a25 b25
+tof a28 b28
+tof a30 b30
+tof d31 a31
+tof d32 b32
+tof b34 d34
+tof d35 a35
+tof b36 d36
+tof d37 b37
+tof b37 d37
+tof d36 b36
+tof a35 d35
+tof d34 b34
+tof b32 d32
+tof a31 d31
+tof b30 a30
+tof b28 a28
+tof b25 a25
+tof a23 b23
+tof b19 a19
+tof a16 b16
+tof d14 b15
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T b15
+T* d14
+tof a15 d14
+tof d14 b15
+tof anc14 d14
+tof b15 d14
+tof anc14 d14
+tof d39 a39
+tof b36 d36
+tof d35 a35
+tof a33 b33
+tof d32 b32
+tof d31 a31
+tof a28 b28
+tof b24 a24
+tof b23 a23
+tof b17 a17
+tof b15 a15
+tof b14 d13
+tof d10 b11
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc15
+tof anc15 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof anc15 d14
+tof a15 b15
+tof anc15 a15
+tof b18 a18
+tof a24 b24
+tof b27 a27
+tof a31 d31
+tof b32 d32
+tof b33 a33
+tof a35 d35
+tof d36 b36
+tof a39 d39
+tof d39 a39
+tof b36 d36
+tof d35 a35
+tof a33 b33
+tof d32 b32
+tof d31 a31
+tof a27 b27
+tof b24 a24
+tof a18 b18
+tof a15 anc15
+tof d14 anc15
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* a15
+T* d14
+T anc15
+T c0
+tof anc15 a15
+tof anc15 d14
+tof b15 d14
+tof b15 anc15
+tof d14 anc15
+tof a15 anc15
+tof anc15 c0
+tof a15 b15
+tof a35 d35
+tof b33 a33
+tof b34 d34
+tof b32 d32
+tof a30 b30
+tof a31 d31
+tof b27 a27
+tof a24 b24
+tof a25 b25
+tof a22 b22
+tof a19 b19
+tof b16 a16
+tof d12 a13
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc15
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof anc15 d15
+tof a16 d15
+tof a16 b16
+tof b19 a19
+tof b22 a22
+tof a23 b23
+tof b25 a25
+tof b28 a28
+tof b30 a30
+tof d31 a31
+tof d32 b32
+tof a33 b33
+tof d34 b34
+tof d35 a35
+tof a35 d35
+tof b34 d34
+tof b33 a33
+tof b32 d32
+tof a31 d31
+tof a30 b30
+tof a28 b28
+tof a25 b25
+tof b23 a23
+tof a22 b22
+tof a19 b19
+tof d15 a16
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a16
+T* d15
+tof b16 d15
+tof d15 a16
+tof anc15 d15
+tof a16 d15
+tof anc15 d15
+tof a39 d39
+tof d37 b37
+tof a33 b33
+tof d34 b34
+tof b30 a30
+tof a29 b29
+tof a23 b23
+tof b21 a21
+tof b22 a22
+tof b18 a18
+tof d14 b15
+tof a16 b16
+tof d11 a12
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc16
+tof anc16 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof anc16 d15
+tof b16 a16
+tof anc16 b16
+tof a18 b18
+tof a21 b21
+tof a22 b22
+tof b23 a23
+tof b24 a24
+tof a27 b27
+tof a30 b30
+tof b33 a33
+tof b34 d34
+tof b37 d37
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof d37 b37
+tof d34 b34
+tof a33 b33
+tof b30 a30
+tof b27 a27
+tof a24 b24
+tof a23 b23
+tof b22 a22
+tof b21 a21
+tof b18 a18
+tof b16 anc16
+tof d15 anc16
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* b16
+T* d15
+T anc16
+T c0
+tof anc16 b16
+tof anc16 d15
+tof a16 d15
+tof a16 anc16
+tof d15 anc16
+tof b16 anc16
+tof anc16 c0
+tof b16 a16
+tof a38 d38
+tof d36 b36
+tof b37 d37
+tof d35 a35
+tof b33 a33
+tof b34 d34
+tof d32 b32
+tof a30 b30
+tof d31 a31
+tof b28 a28
+tof a21 b21
+tof a22 b22
+tof b19 a19
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc16
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof anc16 d16
+tof a17 d16
+tof a17 b17
+tof a19 b19
+tof b22 a22
+tof a26 b26
+tof a28 b28
+tof b30 a30
+tof a31 d31
+tof b32 d32
+tof a33 b33
+tof d34 b34
+tof a35 d35
+tof b36 d36
+tof d37 b37
+tof b37 d37
+tof d36 b36
+tof d35 a35
+tof b34 d34
+tof b33 a33
+tof d32 b32
+tof d31 a31
+tof a30 b30
+tof b28 a28
+tof b26 a26
+tof a22 b22
+tof b19 a19
+tof d16 a17
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a17
+T* d16
+tof b17 d16
+tof d16 a17
+tof anc16 d16
+tof a17 d16
+tof anc16 d16
+tof d39 a39
+tof d37 b37
+tof a33 b33
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof a27 b27
+tof a26 b26
+tof a20 b20
+tof a18 b18
+tof a17 b17
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc17
+tof anc17 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof anc17 d16
+tof b17 a17
+tof anc17 b17
+tof b18 a18
+tof b21 a21
+tof b27 a27
+tof a30 b30
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof d38 a38
+tof a39 d39
+tof d39 a39
+tof a38 d38
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof b30 a30
+tof a27 b27
+tof a21 b21
+tof a18 b18
+tof b17 anc17
+tof d16 anc17
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* b17
+T* d16
+T anc17
+T c0
+tof anc17 b17
+tof anc17 d16
+tof a17 d16
+tof a17 anc17
+tof d16 anc17
+tof b17 anc17
+tof anc17 c0
+tof b17 a17
+tof a39 d39
+tof d38 a38
+tof b36 d36
+tof b33 a33
+tof b34 d34
+tof d32 b32
+tof a30 b30
+tof a31 d31
+tof a28 b28
+tof b25 a25
+tof b22 a22
+tof b18 a18
+tof a19 b19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc17
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof anc17 d17
+tof a18 d17
+tof a18 b18
+tof b19 a19
+tof a22 b22
+tof a25 b25
+tof b26 a26
+tof b28 a28
+tof b30 a30
+tof d31 a31
+tof b32 d32
+tof a33 b33
+tof d34 b34
+tof d36 b36
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof b36 d36
+tof b34 d34
+tof b33 a33
+tof d32 b32
+tof a31 d31
+tof a30 b30
+tof a28 b28
+tof a26 b26
+tof b25 a25
+tof b22 a22
+tof a19 b19
+tof d17 a18
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a18
+T* d17
+tof b18 d17
+tof d17 a18
+tof anc17 d17
+tof a18 d17
+tof anc17 d17
+tof d39 a39
+tof a38 d38
+tof d36 b36
+tof a33 b33
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof b27 a27
+tof b26 a26
+tof b24 a24
+tof a25 b25
+tof b21 a21
+tof a18 b18
+tof a17 d16
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc18
+tof anc18 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof anc18 d17
+tof b18 a18
+tof anc18 b18
+tof a21 b21
+tof a24 b24
+tof b25 a25
+tof a26 b26
+tof a27 b27
+tof a30 b30
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof b36 d36
+tof b37 d37
+tof d38 a38
+tof a39 d39
+tof d39 a39
+tof a38 d38
+tof d37 b37
+tof d36 b36
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof b30 a30
+tof b27 a27
+tof b26 a26
+tof a25 b25
+tof b24 a24
+tof b21 a21
+tof b18 anc18
+tof d17 anc18
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* b18
+T* d17
+T anc18
+T c0
+tof anc18 b18
+tof anc18 d17
+tof a18 d17
+tof a18 anc18
+tof d17 anc18
+tof b18 anc18
+tof anc18 c0
+tof b18 a18
+tof d38 a38
+tof b37 d37
+tof a35 d35
+tof b34 d34
+tof d32 b32
+tof a30 b30
+tof b28 a28
+tof a24 b24
+tof b25 a25
+tof a22 b22
+tof b19 a19
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc18
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof anc18 d18
+tof a19 d18
+tof a19 b19
+tof b22 a22
+tof a25 b25
+tof a28 b28
+tof b29 a29
+tof b30 a30
+tof b32 d32
+tof d34 b34
+tof d35 a35
+tof a38 d38
+tof d38 a38
+tof a35 d35
+tof b34 d34
+tof d32 b32
+tof a30 b30
+tof a29 b29
+tof b28 a28
+tof b25 a25
+tof a22 b22
+tof d18 a19
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a19
+T* d18
+tof b19 d18
+tof d18 a19
+tof anc18 d18
+tof a19 d18
+tof anc18 d18
+tof a39 d39
+tof a38 d38
+tof b33 a33
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof b29 a29
+tof b23 a23
+tof a21 b21
+tof d17 a18
+tof a19 b19
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc19
+tof anc19 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof anc19 d18
+tof b19 a19
+tof anc19 b19
+tof b21 a21
+tof b24 a24
+tof a30 b30
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof b30 a30
+tof a24 b24
+tof a21 b21
+tof b19 anc19
+tof d18 anc19
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* b19
+T* d18
+T anc19
+T c0
+tof anc19 b19
+tof anc19 d18
+tof a19 d18
+tof a19 anc19
+tof d18 anc19
+tof b19 anc19
+tof anc19 c0
+tof b19 a19
+tof d39 a39
+tof b36 d36
+tof d35 a35
+tof b34 d34
+tof d32 b32
+tof a28 b28
+tof a25 b25
+tof b22 a22
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc19
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof anc19 d19
+tof b20 d19
+tof b20 a20
+tof a22 b22
+tof b25 a25
+tof b28 a28
+tof a29 b29
+tof b32 d32
+tof d34 b34
+tof a35 d35
+tof d37 b37
+tof a39 d39
+tof d39 a39
+tof b37 d37
+tof d35 a35
+tof b34 d34
+tof d32 b32
+tof b29 a29
+tof a28 b28
+tof a25 b25
+tof b22 a22
+tof d19 b20
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T b20
+T* d19
+tof a20 d19
+tof d19 b20
+tof anc19 d19
+tof b20 d19
+tof anc19 d19
+tof a39 d39
+tof d38 a38
+tof d34 b34
+tof b32 d32
+tof a30 b30
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof b20 a20
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc20
+tof anc20 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof anc20 d19
+tof a20 b20
+tof anc20 a20
+tof a21 b21
+tof a24 b24
+tof b27 a27
+tof b30 a30
+tof d32 b32
+tof b34 d34
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof d34 b34
+tof b32 d32
+tof a30 b30
+tof a27 b27
+tof b24 a24
+tof b21 a21
+tof a20 anc20
+tof d19 anc20
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* a20
+T* d19
+T anc20
+T c0
+tof anc20 a20
+tof anc20 d19
+tof b20 d19
+tof b20 anc20
+tof d19 anc20
+tof a20 anc20
+tof anc20 c0
+tof a20 b20
+tof a38 d38
+tof d37 b37
+tof a35 d35
+tof b34 d34
+tof d32 b32
+tof b30 a30
+tof a29 b29
+tof b28 a28
+tof b25 a25
+tof a21 b21
+tof a22 b22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc20
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof anc20 d20
+tof b21 d20
+tof b21 a21
+tof b22 a22
+tof a25 b25
+tof a28 b28
+tof b29 a29
+tof a30 b30
+tof b32 d32
+tof d34 b34
+tof d35 a35
+tof b37 d37
+tof d37 b37
+tof a35 d35
+tof b34 d34
+tof d32 b32
+tof b30 a30
+tof a29 b29
+tof b28 a28
+tof b25 a25
+tof a22 b22
+tof d20 b21
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T b21
+T* d20
+tof a21 d20
+tof d20 b21
+tof anc20 d20
+tof b21 d20
+tof anc20 d20
+tof d39 a39
+tof b37 d37
+tof a33 b33
+tof b32 d32
+tof a30 b30
+tof b27 a27
+tof a24 b24
+tof b21 a21
+tof b20 d19
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc21
+tof anc21 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof anc21 d20
+tof a21 b21
+tof anc21 a21
+tof b24 a24
+tof a27 b27
+tof b30 a30
+tof b33 a33
+tof d37 b37
+tof a39 d39
+tof d39 a39
+tof b37 d37
+tof a33 b33
+tof a30 b30
+tof b27 a27
+tof a24 b24
+tof a21 anc21
+tof d20 anc21
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* a21
+T* d20
+T anc21
+T c0
+tof anc21 a21
+tof anc21 d20
+tof b21 d20
+tof b21 anc21
+tof d20 anc21
+tof a21 anc21
+tof anc21 c0
+tof a21 b21
+tof d37 b37
+tof b30 a30
+tof b29 a29
+tof a28 b28
+tof a25 b25
+tof b22 a22
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc21
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof anc21 d21
+tof a22 d21
+tof a22 b22
+tof b25 a25
+tof b28 a28
+tof a29 b29
+tof a30 b30
+tof d32 b32
+tof b37 d37
+tof d37 b37
+tof b32 d32
+tof b30 a30
+tof b29 a29
+tof a28 b28
+tof a25 b25
+tof d21 a22
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a22
+T* d21
+tof b22 d21
+tof d21 a22
+tof anc21 d21
+tof a22 d21
+tof anc21 d21
+tof a39 d39
+tof b37 d37
+tof b33 a33
+tof d32 b32
+tof a30 b30
+tof a29 b29
+tof a27 b27
+tof b24 a24
+tof d20 b21
+tof a22 b22
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc22
+tof anc22 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof anc22 d21
+tof b22 a22
+tof anc22 b22
+tof a24 b24
+tof b27 a27
+tof b30 a30
+tof a33 b33
+tof d36 b36
+tof d37 b37
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof b37 d37
+tof b36 d36
+tof b33 a33
+tof a30 b30
+tof a27 b27
+tof b24 a24
+tof b22 anc22
+tof d21 anc22
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* b22
+T* d21
+T anc22
+T c0
+tof anc22 b22
+tof anc22 d21
+tof a22 d21
+tof a22 anc22
+tof d21 anc22
+tof b22 anc22
+tof anc22 c0
+tof b22 a22
+tof d38 a38
+tof d37 b37
+tof d35 a35
+tof a33 b33
+tof b30 a30
+tof b27 a27
+tof b28 a28
+tof b25 a25
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc22
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof anc22 d22
+tof a23 d22
+tof a23 b23
+tof a25 b25
+tof a28 b28
+tof b29 a29
+tof a30 b30
+tof b32 d32
+tof b33 a33
+tof a35 d35
+tof b37 d37
+tof d37 b37
+tof d35 a35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof a29 b29
+tof b28 a28
+tof b25 a25
+tof d22 a23
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a23
+T* d22
+tof b23 d22
+tof d22 a23
+tof anc22 d22
+tof a23 d22
+tof anc22 d22
+tof d39 a39
+tof d36 b36
+tof b37 d37
+tof b33 a33
+tof d34 b34
+tof b32 d32
+tof a30 b30
+tof b29 a29
+tof a24 b24
+tof a23 b23
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc23
+tof anc23 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof anc23 d22
+tof b23 a23
+tof anc23 b23
+tof b24 a24
+tof a27 b27
+tof b30 a30
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof b36 d36
+tof d37 b37
+tof a38 d38
+tof a39 d39
+tof d39 a39
+tof d38 a38
+tof b37 d37
+tof d36 b36
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof a30 b30
+tof b27 a27
+tof a24 b24
+tof b23 anc23
+tof d22 anc23
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* b23
+T* d22
+T anc23
+T c0
+tof anc23 b23
+tof anc23 d22
+tof a23 d22
+tof a23 anc23
+tof d22 anc23
+tof b23 anc23
+tof anc23 c0
+tof b23 a23
+tof a38 d38
+tof d37 b37
+tof a35 d35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof a27 b27
+tof a28 b28
+tof b24 a24
+tof a25 b25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc23
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof anc23 d23
+tof a24 d23
+tof a24 b24
+tof b25 a25
+tof b28 a28
+tof a29 b29
+tof a30 b30
+tof b32 d32
+tof b33 a33
+tof d35 a35
+tof b37 d37
+tof d38 a38
+tof a38 d38
+tof d37 b37
+tof a35 d35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof b29 a29
+tof a28 b28
+tof a25 b25
+tof d23 a24
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a24
+T* d23
+tof b24 d23
+tof d23 a24
+tof anc23 d23
+tof a24 d23
+tof anc23 d23
+tof a39 d39
+tof d38 a38
+tof b37 d37
+tof b33 a33
+tof b34 d34
+tof b32 d32
+tof a30 b30
+tof a29 b29
+tof a24 b24
+tof a23 d22
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc24
+tof anc24 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof anc24 d23
+tof b24 a24
+tof anc24 b24
+tof b27 a27
+tof b30 a30
+tof d32 b32
+tof a33 b33
+tof d34 b34
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof b34 d34
+tof b33 a33
+tof b32 d32
+tof a30 b30
+tof a27 b27
+tof b24 anc24
+tof d23 anc24
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* b24
+T* d23
+T anc24
+T c0
+tof anc24 b24
+tof anc24 d23
+tof a24 d23
+tof a24 anc24
+tof d23 anc24
+tof b24 anc24
+tof anc24 c0
+tof b24 a24
+tof a38 d38
+tof d35 a35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof b27 a27
+tof b28 a28
+tof b25 a25
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc24
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof anc24 d24
+tof a25 d24
+tof a25 b25
+tof a28 b28
+tof b29 a29
+tof a30 b30
+tof b32 d32
+tof b33 a33
+tof a35 d35
+tof d37 b37
+tof d38 a38
+tof a38 d38
+tof b37 d37
+tof d35 a35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof a29 b29
+tof b28 a28
+tof d24 a25
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a25
+T* d24
+tof b25 d24
+tof d24 a25
+tof anc24 d24
+tof a25 d24
+tof anc24 d24
+tof d39 a39
+tof b36 d36
+tof d37 b37
+tof b33 a33
+tof d34 b34
+tof b32 d32
+tof a30 b30
+tof b29 a29
+tof a26 b26
+tof a25 b25
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc25
+tof anc25 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof anc25 d24
+tof b25 a25
+tof anc25 b25
+tof a27 b27
+tof b30 a30
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof b37 d37
+tof a39 d39
+tof d39 a39
+tof d37 b37
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof a30 b30
+tof b27 a27
+tof b25 anc25
+tof d24 anc25
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* b25
+T* d24
+T anc25
+T c0
+tof anc25 b25
+tof anc25 d24
+tof a25 d24
+tof a25 anc25
+tof d24 anc25
+tof b25 anc25
+tof anc25 c0
+tof b25 a25
+tof d38 a38
+tof b37 d37
+tof a35 d35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof a27 b27
+tof a28 b28
+tof d24 a25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc25
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof anc25 d25
+tof b26 d25
+tof b26 a26
+tof b28 a28
+tof a29 b29
+tof a30 b30
+tof b32 d32
+tof b33 a33
+tof d35 a35
+tof d37 b37
+tof b37 d37
+tof a35 d35
+tof a33 b33
+tof d32 b32
+tof b30 a30
+tof b29 a29
+tof a28 b28
+tof d25 b26
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T b26
+T* d25
+tof a26 d25
+tof d25 b26
+tof anc25 d25
+tof b26 d25
+tof anc25 d25
+tof a39 d39
+tof d37 b37
+tof b33 a33
+tof b34 d34
+tof b32 d32
+tof a30 b30
+tof a29 b29
+tof b26 a26
+tof a23 d22
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc26
+tof anc26 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof anc26 d25
+tof a26 b26
+tof anc26 a26
+tof b27 a27
+tof b30 a30
+tof d32 b32
+tof a33 b33
+tof d34 b34
+tof d36 b36
+tof b37 d37
+tof a38 d38
+tof d39 a39
+tof a39 d39
+tof d38 a38
+tof d37 b37
+tof b36 d36
+tof b34 d34
+tof b33 a33
+tof b32 d32
+tof a30 b30
+tof a27 b27
+tof a26 anc26
+tof d25 anc26
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* a26
+T* d25
+T anc26
+T c0
+tof anc26 a26
+tof anc26 d25
+tof b26 d25
+tof b26 anc26
+tof d25 anc26
+tof a26 anc26
+tof anc26 c0
+tof a26 b26
+tof d39 a39
+tof a38 d38
+tof d36 b36
+tof b37 d37
+tof a33 b33
+tof d32 b32
+tof d31 a31
+tof b27 a27
+tof b28 a28
+tof d25 b26
+tof a25 d24
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc26
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof b26 d25
+tof anc26 d26
+tof a27 d26
+tof a27 b27
+tof a28 b28
+tof b29 a29
+tof b32 d32
+tof b36 d36
+tof d37 b37
+tof d38 a38
+tof a39 d39
+tof d39 a39
+tof a38 d38
+tof b37 d37
+tof d36 b36
+tof d32 b32
+tof a29 b29
+tof b28 a28
+tof d26 a27
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a27
+T* d26
+tof b27 d26
+tof d26 a27
+tof anc26 d26
+tof a27 d26
+tof anc26 d26
+tof a39 d39
+tof b36 d36
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof a27 b27
+tof b26 d25
+tof d22 a23
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc27
+tof anc27 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof anc27 d26
+tof b27 a27
+tof anc27 b27
+tof a30 b30
+tof d32 b32
+tof b33 a33
+tof b34 d34
+tof d36 b36
+tof d39 a39
+tof a39 d39
+tof b36 d36
+tof d34 b34
+tof a33 b33
+tof b32 d32
+tof b30 a30
+tof b27 anc27
+tof d26 anc27
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* b27
+T* d26
+T anc27
+T c0
+tof anc27 b27
+tof anc27 d26
+tof a27 d26
+tof a27 anc27
+tof d26 anc27
+tof b27 anc27
+tof anc27 c0
+tof b27 a27
+tof d39 a39
+tof d38 a38
+tof d37 b37
+tof b34 d34
+tof d32 b32
+tof b29 a29
+tof a28 b28
+tof d24 a25
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H anc27
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof d25 b26
+tof anc27 d27
+tof b28 d27
+tof b28 a28
+tof a29 b29
+tof b32 d32
+tof a38 d38
+tof a39 d39
+tof d39 a39
+tof d38 a38
+tof d32 b32
+tof b29 a29
+tof d27 b28
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T b28
+T* d27
+tof a28 d27
+tof d27 b28
+tof anc27 d27
+tof b28 d27
+tof anc27 d27
+tof a39 d39
+tof d36 b36
+tof b32 d32
+tof a30 b30
+tof d26 a27
+tof b28 a28
+tof d23 a24
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc28
+tof anc28 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof anc28 d27
+tof a28 b28
+tof anc28 a28
+tof b30 a30
+tof d32 b32
+tof d34 b34
+tof b36 d36
+tof d39 a39
+tof a39 d39
+tof d36 b36
+tof b34 d34
+tof b32 d32
+tof a30 b30
+tof a28 anc28
+tof d27 anc28
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* a28
+T* d27
+T anc28
+T c0
+tof anc28 a28
+tof anc28 d27
+tof b28 d27
+tof b28 anc28
+tof d27 anc28
+tof a28 anc28
+tof anc28 c0
+tof a28 b28
+tof d39 a39
+tof b36 d36
+tof d34 b34
+tof d32 b32
+tof a29 b29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc28
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof b26 d25
+tof anc28 d28
+tof b29 d28
+tof b29 a29
+tof b32 d32
+tof d36 b36
+tof b37 d37
+tof a39 d39
+tof d39 a39
+tof d37 b37
+tof b36 d36
+tof d32 b32
+tof d28 b29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T b29
+T* d28
+tof a29 d28
+tof d28 b29
+tof anc28 d28
+tof b29 d28
+tof anc28 d28
+tof a39 d39
+tof a38 d38
+tof d36 b36
+tof d35 a35
+tof b32 d32
+tof b30 a30
+tof b29 a29
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc29
+tof anc29 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof b28 d27
+tof a29 d28
+tof anc29 d28
+tof a29 b29
+tof anc29 a29
+tof a30 b30
+tof d32 b32
+tof b34 d34
+tof a35 d35
+tof b36 d36
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof d36 b36
+tof d35 a35
+tof d34 b34
+tof b32 d32
+tof b30 a30
+tof a29 anc29
+tof d28 anc29
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* a29
+T* anc29
+T d28
+T c0
+tof d28 a29
+tof d28 anc29
+tof b29 anc29
+tof b29 d28
+tof anc29 d28
+tof a29 d28
+tof d28 c0
+tof a29 b29
+tof d39 a39
+tof d38 a38
+tof b37 d37
+tof b33 a33
+tof d32 b32
+tof a30 b30
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H d28
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof d25 b26
+tof b29 anc29
+tof d28 d29
+tof b30 d29
+tof b30 a30
+tof b32 d32
+tof a33 b33
+tof d37 b37
+tof a38 d38
+tof a39 d39
+tof d39 a39
+tof d38 a38
+tof b37 d37
+tof b33 a33
+tof d32 b32
+tof d29 b30
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T b30
+T* d29
+tof a30 d29
+tof d29 b30
+tof d28 d29
+tof b30 d29
+tof d28 d29
+tof a38 d38
+tof b36 d36
+tof a35 d35
+tof a33 b33
+tof b34 d34
+tof b32 d32
+tof b30 a30
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc30
+tof anc30 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof d27 b28
+tof a30 d29
+tof anc30 d29
+tof a30 b30
+tof anc30 a30
+tof d32 b32
+tof b33 a33
+tof d34 b34
+tof d35 a35
+tof d36 b36
+tof d38 a38
+tof a38 d38
+tof b36 d36
+tof a35 d35
+tof b34 d34
+tof a33 b33
+tof b32 d32
+tof a30 anc30
+tof d29 anc30
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* a30
+T* anc30
+T d29
+T c0
+tof d29 a30
+tof d29 anc30
+tof b30 anc30
+tof b30 d29
+tof anc30 d29
+tof a30 d29
+tof d29 c0
+tof a30 b30
+tof d38 a38
+tof d37 b37
+tof b33 a33
+tof d32 b32
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H d29
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof b26 d25
+tof anc29 b29
+tof d29 d30
+tof a31 d30
+tof a31 d31
+tof b32 d32
+tof b37 d37
+tof a38 d38
+tof d38 a38
+tof d37 b37
+tof d32 b32
+tof d30 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a31
+T* d30
+tof d31 d30
+tof d30 a31
+tof d29 d30
+tof a31 d30
+tof d29 d30
+tof a38 d38
+tof d36 b36
+tof d35 a35
+tof d34 b34
+tof b32 d32
+tof anc30 b30
+tof a31 d31
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc31
+tof anc31 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof b28 d27
+tof b30 anc30
+tof d31 d30
+tof anc31 d30
+tof d31 a31
+tof anc31 d31
+tof d32 b32
+tof a33 b33
+tof b34 d34
+tof a35 d35
+tof b36 d36
+tof d38 a38
+tof a38 d38
+tof d36 b36
+tof d35 a35
+tof d34 b34
+tof b33 a33
+tof b32 d32
+tof d31 anc31
+tof d30 anc31
+tof anc30 b30
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* d31
+T* anc31
+T d30
+T c0
+tof d30 d31
+tof d30 anc31
+tof a31 anc31
+tof a31 d30
+tof anc31 d30
+tof d31 d30
+tof d30 c0
+tof d31 a31
+tof d38 a38
+tof a33 b33
+tof d32 b32
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H d30
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof d25 b26
+tof b29 anc29
+tof a31 anc31
+tof d30 b31
+tof b32 b31
+tof b32 d32
+tof b31 b32
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T b32
+T* b31
+tof d32 b31
+tof b31 b32
+tof d30 b31
+tof b32 b31
+tof d30 b31
+tof b36 d36
+tof a35 d35
+tof b34 d34
+tof b32 d32
+tof b30 anc30
+tof a31 anc31
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc32
+tof anc32 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof d27 b28
+tof anc30 b30
+tof anc31 a31
+tof anc32 b31
+tof d32 b32
+tof anc32 d32
+tof b33 a33
+tof d34 b34
+tof d36 b36
+tof a38 d38
+tof d38 a38
+tof b36 d36
+tof b34 d34
+tof a33 b33
+tof d32 anc32
+tof b31 anc32
+tof a31 anc31
+tof b30 anc30
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* d32
+T* b31
+T anc32
+T c0
+tof anc32 d32
+tof anc32 b31
+tof b32 b31
+tof b32 anc32
+tof b31 anc32
+tof d32 anc32
+tof anc32 c0
+tof d32 b32
+tof a39 d39
+tof a38 d38
+tof b33 a33
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc32
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof b26 d25
+tof anc29 b29
+tof a31 anc31
+tof anc32 a32
+tof a33 a32
+tof a33 b33
+tof d35 a35
+tof d38 a38
+tof d39 a39
+tof a39 d39
+tof a38 d38
+tof a35 d35
+tof a32 a33
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a33
+T* a32
+tof b33 a32
+tof a32 a33
+tof anc32 a32
+tof a33 a32
+tof anc32 a32
+tof d38 a38
+tof d36 b36
+tof d35 a35
+tof a33 b33
+tof d34 b34
+tof anc30 b30
+tof a31 anc31
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc33
+tof anc33 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof b28 d27
+tof b30 anc30
+tof anc31 a31
+tof anc33 a32
+tof b33 a33
+tof b34 d34
+tof a35 d35
+tof b36 d36
+tof d36 b36
+tof d35 a35
+tof d34 b34
+tof b33 anc33
+tof a32 b33
+tof a31 anc31
+tof anc30 b30
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* anc33
+T* a32
+T b33
+T c0
+tof b33 anc33
+tof b33 a32
+tof a33 a32
+tof a33 b33
+tof a32 b33
+tof anc33 b33
+tof b33 c0
+tof anc33 a33
+tof d39 a39
+tof b37 d37
+tof a32 a33
+tof b34 d34
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H b33
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof d25 b26
+tof b29 anc29
+tof a31 anc31
+tof a33 a32
+tof b33 d33
+tof d34 d33
+tof d34 b34
+tof a38 d38
+tof a39 d39
+tof d39 a39
+tof d38 a38
+tof d33 d34
+tof a32 a33
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T d34
+T* d33
+tof b34 d33
+tof d33 d34
+tof b33 d33
+tof d34 d33
+tof b33 d33
+tof a38 d38
+tof b36 d36
+tof a35 d35
+tof d34 b34
+tof b30 anc30
+tof a31 anc31
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc34
+tof anc34 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof d27 b28
+tof anc30 b30
+tof anc31 a31
+tof anc34 d33
+tof b34 d34
+tof d35 a35
+tof d36 b36
+tof d38 a38
+tof a38 d38
+tof b36 d36
+tof a35 d35
+tof b34 anc34
+tof d33 b34
+tof a31 anc31
+tof b30 anc30
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* anc34
+T* d33
+T b34
+T c0
+tof b34 anc34
+tof b34 d33
+tof d34 d33
+tof d34 b34
+tof d33 b34
+tof anc34 b34
+tof b34 c0
+tof anc34 d34
+tof a39 d39
+tof d36 b36
+tof d35 a35
+tof a33 a32
+tof d33 d34
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H b34
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof b26 d25
+tof anc29 b29
+tof a31 anc31
+tof a32 a33
+tof d34 d33
+tof b34 a34
+tof a35 a34
+tof a35 d35
+tof d37 b37
+tof d39 a39
+tof a39 d39
+tof b37 d37
+tof a34 a35
+tof d33 d34
+tof a33 a32
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T a35
+T* a34
+tof d35 a34
+tof a34 a35
+tof b34 a34
+tof a35 a34
+tof b34 a34
+tof d38 a38
+tof a35 d35
+tof d34 d33
+tof anc30 b30
+tof a31 anc31
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc35
+tof anc35 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof b28 d27
+tof b30 anc30
+tof anc31 a31
+tof d33 d34
+tof anc35 a34
+tof d35 a35
+tof b36 d36
+tof a38 d38
+tof d38 a38
+tof d36 b36
+tof d35 anc35
+tof a34 d35
+tof d34 d33
+tof a31 anc31
+tof anc30 b30
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* anc35
+T* a34
+T d35
+T c0
+tof d35 anc35
+tof d35 a34
+tof a35 a34
+tof a35 d35
+tof a34 d35
+tof anc35 d35
+tof d35 c0
+tof anc35 a35
+tof a38 d38
+tof b36 d36
+tof d37 b37
+tof a34 a35
+tof a32 a33
+tof d33 d34
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H d35
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof d25 b26
+tof b29 anc29
+tof a31 anc31
+tof a33 a32
+tof d34 d33
+tof a35 a34
+tof d35 b35
+tof d36 b35
+tof d36 b36
+tof b37 d37
+tof d38 a38
+tof a38 d38
+tof d37 b37
+tof b35 d36
+tof a34 a35
+tof d33 d34
+tof a32 a33
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T d36
+T* b35
+tof b36 b35
+tof b35 d36
+tof d35 b35
+tof d36 b35
+tof d35 b35
+tof d38 a38
+tof d36 b36
+tof b37 d37
+tof a33 a32
+tof d34 d33
+tof b30 anc30
+tof a31 anc31
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc36
+tof anc36 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof d27 b28
+tof anc30 b30
+tof anc31 a31
+tof d33 d34
+tof anc36 b35
+tof b36 d36
+tof d37 b37
+tof a38 d38
+tof d38 a38
+tof b37 d37
+tof b36 anc36
+tof b35 b36
+tof d34 d33
+tof a31 anc31
+tof b30 anc30
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* anc36
+T* b35
+T b36
+T c0
+tof b36 anc36
+tof b36 b35
+tof d36 b35
+tof d36 b36
+tof b35 b36
+tof anc36 b36
+tof b36 c0
+tof anc36 d36
+tof a38 d38
+tof d37 b37
+tof a35 a34
+tof d33 d34
+tof anc30 b30
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H b36
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof b14 d13
+tof d16 a17
+tof b20 d19
+tof d22 a23
+tof b26 d25
+tof anc29 b29
+tof a31 anc31
+tof a32 a33
+tof d34 d33
+tof a34 a35
+tof b36 a36
+tof b37 a36
+tof b37 d37
+tof a36 b37
+tof a35 a34
+tof d33 d34
+tof a33 a32
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T b37
+T* a36
+tof d37 a36
+tof a36 b37
+tof b36 a36
+tof b37 a36
+tof b36 a36
+tof d39 a39
+tof b37 d37
+tof a32 a33
+tof d34 d33
+tof a31 anc31
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc37
+tof anc37 c0
+tof b4 d3
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof b28 d27
+tof b30 anc30
+tof anc31 a31
+tof d33 d34
+tof d37 a36
+tof anc37 a36
+tof d37 b37
+tof anc37 d37
+tof d38 a38
+tof a39 d39
+tof d39 a39
+tof a38 d38
+tof d37 anc37
+tof a36 anc37
+tof d34 d33
+tof a31 anc31
+tof anc30 b30
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+T* d37
+T* anc37
+T a36
+T c0
+tof a36 d37
+tof a36 anc37
+tof b37 anc37
+tof b37 a36
+tof anc37 a36
+tof d37 a36
+tof a36 c0
+tof d37 b37
+tof d38 a38
+tof anc37 b37
+tof a34 a35
+tof d33 d34
+tof b30 anc30
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+H a36
+tof b1 b2
+tof b5 d4
+tof d7 a8
+tof b11 d10
+tof d13 b14
+tof a17 d16
+tof d19 b20
+tof a23 d22
+tof d25 b26
+tof b29 anc29
+tof a31 anc31
+tof a33 a32
+tof d34 d33
+tof a35 a34
+tof a36 a37
+tof a38 a37
+tof a38 d38
+tof a37 a38
+tof a34 a35
+tof d33 d34
+tof a32 a33
+tof anc31 a31
+tof anc29 b29
+tof b26 d25
+tof d22 a23
+tof b20 d19
+tof d16 a17
+tof b14 d13
+tof d10 b11
+tof a8 d7
+tof d4 b5
+tof b2 b1
+T a38
+T* a37
+tof d38 a37
+tof a37 a38
+tof a36 a37
+tof a38 a37
+tof a36 a37
+tof a38 d38
+tof a35 a34
+tof d34 d33
+tof a31 anc31
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+H anc38
+tof anc38 c0
+tof d3 b4
+tof a7 d6
+tof d9 a10
+tof a13 d12
+tof d15 a16
+tof a19 d18
+tof d21 a22
+tof a25 d24
+tof d27 b28
+tof anc30 b30
+tof anc31 a31
+tof d33 d34
+tof b37 anc37
+tof anc38 a37
+tof d38 a38
+tof anc38 d38
+tof d38 anc38
+tof a37 anc38
+tof anc37 b37
+tof d34 d33
+tof a31 anc31
+tof b30 anc30
+tof b28 d27
+tof d24 a25
+tof a22 d21
+tof d18 a19
+tof a16 d15
+tof d12 a13
+tof a10 d9
+tof d6 a7
+tof b4 d3
+T* d38
+T* a37
+T anc38
+T c0
+tof anc38 d38
+tof anc38 a37
+tof a38 a37
+tof a38 anc38
+tof a37 anc38
+tof d38 anc38
+tof anc38 c0
+tof d38 a38
+tof a39 d39
+tof b35 d36
+tof a33 a32
+tof d33 d34
+tof anc30 b30
+tof anc31 a31
+tof b29 anc29
+tof d25 b26
+tof a23 d22
+tof d19 b20
+tof a17 d16
+tof d13 b14
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+H anc38
+tof b2 b1
+tof d4 b5
+tof a8 d7
+tof d10 b11
+tof d16 a17
+tof d22 a23
+tof anc29 b29
+tof a31 anc31
+tof a32 a33
+tof d34 d33
+tof a34 a35
+tof anc38 b38
+tof d39 b38
+tof d39 a39
+tof b38 d39
+tof a35 a34
+tof d33 d34
+tof a33 a32
+tof anc31 a31
+tof b29 anc29
+tof a23 d22
+tof a17 d16
+tof b11 d10
+tof d7 a8
+tof b5 d4
+tof b1 b2
+T d39
+T* b38
+tof a39 b38
+tof b38 d39
+tof anc38 b38
+tof d39 b38
+tof anc38 b38
+tof d39 a39
+tof b37 anc37
+tof a32 a33
+tof d34 d33
+tof a31 anc31
+tof d27 b28
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+tof d3 b4
+H anc39
+tof anc39 c0
+tof d6 a7
+tof a10 d9
+tof d12 a13
+tof a16 d15
+tof d18 a19
+tof a22 d21
+tof d24 a25
+tof anc31 a31
+tof d33 d34
+tof anc37 b37
+tof anc39 b38
+tof a39 b38
+tof a39 d39
+tof a39 anc38
+tof b38 a39
+tof b37 anc37
+tof d34 d33
+tof a31 anc31
+tof a25 d24
+tof d21 a22
+tof a19 d18
+tof d15 a16
+tof a13 d12
+tof d9 a10
+tof a7 d6
+T* anc38
+T* a39
+T b38
+T c0
+tof b38 anc38
+tof b38 a39
+tof d39 a39
+tof d39 b38
+tof a39 b38
+tof anc38 b38
+tof b38 c0
+tof anc38 d39
+tof a39 d39
+tof a37 a38
+tof anc37 b37
+tof a34 a35
+tof d33 d34
+tof b31 b32
+tof anc31 a31
+tof anc29 b29
+tof d24 a25
+tof d22 a23
+tof a22 d21
+tof d18 a19
+tof d16 a17
+tof a16 d15
+tof d12 a13
+tof d10 b11
+tof a10 d9
+tof a8 d7
+tof d6 a7
+tof d4 b5
+tof b2 b1
+tof anc2 a1
+H c0
+tof c0 b39
+H b38
+P b38
+H b38
+P b38
+H b38
+P b38
+tof anc2 d2
+tof d2 anc2
+tof anc2 d2
+tof d2 b3
+tof b3 d2
+tof d2 b3
+tof b3 a3
+tof a3 b3
+tof b3 a3
+tof a3 anc3
+tof anc3 a3
+tof a3 anc3
+tof anc3 a2
+tof a2 anc3
+tof anc3 a2
+tof a2 b2
+tof b2 a2
+tof a2 b2
+tof b2 b1
+tof b1 b2
+tof b2 b1
+tof b1 a1
+tof a1 b1
+tof b1 a1
+tof d10 a11
+tof a11 d10
+tof d10 a11
+tof d11 b12
+tof b12 d11
+tof d11 b12
+tof b12 a12
+tof a12 b12
+tof b12 a12
+tof d12 b13
+tof b13 d12
+tof d12 b13
+tof b13 a13
+tof a13 b13
+tof b13 a13
+tof d13 a14
+tof a14 d13
+tof d13 a14
+tof d14 a15
+tof a15 d14
+tof d14 a15
+tof d16 b17
+tof b17 d16
+tof d16 b17
+tof b17 a17
+tof a17 b17
+tof b17 a17
+tof d17 b18
+tof b18 d17
+tof d17 b18
+tof b18 a18
+tof a18 b18
+tof b18 a18
+tof d18 b19
+tof b19 d18
+tof d18 b19
+tof b19 a19
+tof a19 b19
+tof b19 a19
+tof d19 a20
+tof a20 d19
+tof d19 a20
+tof d20 a21
+tof a21 d20
+tof d20 a21
+tof d22 b23
+tof b23 d22
+tof d22 b23
+tof b23 a23
+tof a23 b23
+tof b23 a23
+tof d23 b24
+tof b24 d23
+tof d23 b24
+tof b24 a24
+tof a24 b24
+tof b24 a24
+tof d24 b25
+tof b25 d24
+tof d24 b25
+tof b25 a25
+tof a25 b25
+tof b25 a25
+tof d25 a26
+tof a26 d25
+tof d25 a26
+tof d26 b27
+tof b27 d26
+tof d26 b27
+tof b27 a27
+tof a27 b27
+tof b27 a27
+tof d27 a28
+tof a28 d27
+tof d27 a28
+tof anc29 d28
+tof d28 anc29
+tof anc29 d28
+tof d28 a29
+tof a29 d28
+tof d28 a29
+tof anc30 d29
+tof d29 anc30
+tof anc30 d29
+tof d29 a30
+tof a30 d29
+tof d29 a30
+tof anc31 d30
+tof d30 anc31
+tof anc31 d30
+tof d30 d31
+tof d31 d30
+tof d30 d31
+tof d31 d32
+tof d32 d31
+tof d31 d32
+tof d32 anc33
+tof anc33 d32
+tof d32 anc33
+tof anc33 b33
+tof b33 anc33
+tof anc33 b33
+tof b33 a33
+tof a33 b33
+tof b33 a33
+tof a33 a32
+tof a32 a33
+tof a33 a32
+tof a32 b31
+tof b31 a32
+tof a32 b31
+tof b31 a31
+tof a31 b31
+tof b31 a31
+tof d33 anc34
+tof anc34 d33
+tof d33 anc34
+tof anc34 b34
+tof b34 anc34
+tof anc34 b34
+tof b34 d34
+tof d34 b34
+tof b34 d34
+tof d34 anc35
+tof anc35 d34
+tof d34 anc35
+tof anc35 d35
+tof d35 anc35
+tof anc35 d35
+tof d35 anc36
+tof anc36 d35
+tof d35 anc36
+tof anc36 b36
+tof b36 anc36
+tof anc36 b36
+tof b36 d36
+tof d36 b36
+tof b36 d36
+tof d36 d37
+tof d37 d36
+tof d36 d37
+tof d37 d38
+tof d38 d37
+tof d37 d38
+tof d38 anc38
+tof anc38 d38
+tof d38 anc38
+tof anc38 a36
+tof a36 anc38
+tof anc38 a36
+tof a36 b35
+tof b35 a36
+tof a36 b35
+tof b35 a35
+tof a35 b35
+tof b35 a35
+tof a35 a34
+tof a34 a35
+tof a35 a34
+tof anc37 anc39
+tof anc39 anc37
+tof anc37 anc39
+tof anc39 c0
+tof c0 anc39
+tof anc39 c0
+tof c0 b38
+tof b38 c0
+tof c0 b38
+tof b38 a38
+tof a38 b38
+tof b38 a38
+tof a38 a37
+tof a37 a38
+tof a38 a37
+tof d3 a4
+tof a4 d3
+tof d3 a4
+tof d4 a5
+tof a5 d4
+tof d4 a5
+tof d5 b6
+tof b6 d5
+tof d5 b6
+tof b6 a6
+tof a6 b6
+tof b6 a6
+tof d6 b7
+tof b7 d6
+tof d6 b7
+tof b7 a7
+tof a7 b7
+tof b7 a7
+tof d8 a9
+tof a9 d8
+tof d8 a9
+tof d1 d0
+tof d0 d1
+tof d1 d0
+tof d0 anc1
+tof anc1 d0
+tof d0 anc1
+tof d9 b10
+tof b10 d9
+tof d9 b10
+tof d15 b16
+tof b16 d15
+tof d15 b16
+tof d21 b22
+tof b22 d21
+tof d21 b22
+tof d39 b39
+tof b39 d39
+tof d39 b39
+tof d7 b8
+tof b8 d7
+tof d7 b8
+END
